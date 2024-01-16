@@ -727,13 +727,13 @@
 
     .heading {
       color: white;
-      font-size: 10px;
+      font-size: 100px;
       text-align: center;
     }
 
     .iiitkheading {
       color: rgb(255, 255, 255);
-      font-size: 70px;
+      font-size: 30px;
       text-align: center;
     }
 
@@ -741,8 +741,8 @@
       /* align-items: center; */
       margin: auto;
       text-align: center;
-      padding-right: 500px;
-
+      padding-right: 380px;
+      padding-bottom: 10px;
     }
 
     h1 {
@@ -755,7 +755,7 @@
       border: 0px solid #ddd;
       height: 50px;
       line-height: 50px;
-      font-size: 35px;
+      font-size: 25px;
       overflow: hidden;
       display: inline-block;
     }
@@ -801,7 +801,9 @@
         top: -150px;
       }
     }
-
+    .first-page-line{
+      font-size: 18px;
+    }
 
     .joinbutton {
       font-size: 25px;
@@ -810,6 +812,9 @@
     a.joinbutton:hover {
       background-color: #2d4491;
       color: white;
+    }
+    .navsize{
+      padding-left: 500px;
     }
   </style>
 
@@ -836,7 +841,7 @@
             <span></span>
           </div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse navsize" id="navbarSupportedContent">
           <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
             <li class="nav-item">
               <a class="nav-link link text-black display-4" href="#">Internships</a>
@@ -847,10 +852,16 @@
             <li class="nav-item">
               <a class="nav-link link text-black display-4" href="#">Research</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="#h">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="#contact">Contact Us</a>
+            </li>
           </ul>
-          <div class="navbar-buttons mbr-section-btn">
+          <!-- <div class="navbar-buttons mbr-section-btn">
             <a class="btn btn-primary display-4" href="https://international.iiitkottayam.ac.in">Explore More</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </nav>
@@ -924,7 +935,7 @@
           </h1>
           <h1 class="iiitkheading"><strong>IIIT - Kottayam</strong></h1>
         </div>
-        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Embark on a global journey of learning,
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7 first-page-line">Embark on a global journey of learning,
           collaboration, and innovation with IntAff</p>
 
       </div>
@@ -993,6 +1004,7 @@
 
     .cid-u14wQlI2Uz .row {
       align-items: center;
+      
     }
 
     @media (max-width: 991px) {
@@ -1015,6 +1027,17 @@
     .cid-u14wQlI2Uz .mbr-section-btn {
       color: #000000;
     }
+    /* .row{
+    
+            flex: 0 0 auto; /* Allow items to grow and shrink as needed */
+            width: 200px; /* Set a fixed width for each item */
+            margin: 10px; /* Add some spacing between items */
+            background-color: #f0f0f0;
+            padding: 10px;
+            box-sizing: border-box;
+            white-space: nowrap; /* Prevent text from wrapping within items */
+        
+    } */
   </style>
 
   <section class="article4 cid-u14wQlI2Uz" id="about-us-4-u14wQlI2Uz">
@@ -1144,6 +1167,7 @@
 </section> -->
   <style>
     .cid-u14wQlJr08 {
+      
       padding-top: 5rem;
       padding-bottom: 3rem;
       background-color: #ffffff;
@@ -1157,9 +1181,9 @@
 
     .cid-u14wQlJr08 img,
     .cid-u14wQlJr08 .item-img {
-      width: 100%;
-      height: 100%;
-      height: 400px;
+      width: 80%;
+      height: 80%;
+      margin-left: 25px;
       object-fit: cover;
     }
 
@@ -1170,6 +1194,7 @@
 
     .cid-u14wQlJr08 .item {
       margin-bottom: 2rem;
+     
     }
 
     @media (max-width: 767px) {
@@ -1182,7 +1207,9 @@
       position: relative;
       border-radius: 4px;
       display: flex;
+      align-items:center;
       flex-flow: column nowrap;
+      
     }
 
     .cid-u14wQlJr08 .mbr-section-btn {
@@ -1207,13 +1234,22 @@
       max-width: 800px;
     }
 
-    .students {
-      display: flex;
-      overflow-x: auto;
-    }
+     .scroll_bar{
+           display: flex;
+            flex-wrap: nowrap; 
+            overflow: auto; 
+           
+    } 
+    /* .scroll_bar::-webkit-scrollbar {
+   display: none; 
+} */
+.students{
+  margin-top:50px ;
+}
+   
   </style>
   <section class="people03 cid-u14wQlJr08" id="team-1-u14wQlJr08">
-    <div class="container-fluid">
+    <div class="container-fluid" id="h">
       <div class="row justify-content-center">
         <div class="col-12 content-head">
           <div class="mbr-section-head mb-5">
@@ -1223,12 +1259,13 @@
           </div>
         </div>
       </div>
-      <div class="students">
+      <div class="faculty">
         <div class="row">
+          <div class="scroll_bar">
           <div class="item features-image col-12 col-md-6 col-lg-3">
             <div class="item-wrapper">
               <div class="item-img mb-3">
-                <img src="assets/images/photo-1596421250711-9ec0ef9cbba3.jpeg">
+                <img class="circle" src="assets/images/shajulin_sir.jpg">
               </div>
               <div class="item-content align-left">
                 <h6 class="item-subtitle mbr-fonts-style display-5">
@@ -1238,10 +1275,25 @@
               </div>
             </div>
           </div>
+
           <div class="item features-image col-12 col-md-6 col-lg-3">
             <div class="item-wrapper">
               <div class="item-img mb-3">
-                <img src="assets/images/photo-1546919057-eae69a7a3c35.jpeg">
+                <img class="circle" src="assets/images/shajulin_sir.jpg">
+              </div>
+              <div class="item-content align-left">
+                <h6 class="item-subtitle mbr-fonts-style display-5">
+                  <strong>Ethan</strong>
+                </h6>
+                <p class="mbr-text mbr-fonts-style display-7">Director of International Affairs</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item features-image col-12 col-md-6 col-lg-3">
+            <div class="item-wrapper">
+              <div class="item-img mb-3">
+                <img class="circle" src="assets/images/photo-1546919057-eae69a7a3c35.jpeg">
               </div>
               <div class="item-content align-left">
                 <h6 class="item-subtitle mbr-fonts-style display-5">
@@ -1279,13 +1331,28 @@
           </div>
         </div>
       </div>
-      <div class="faculty">
+      </div>
+      <div class="students">
         <div class="row">
           <div class="row">
+            <div class="scroll_bar">
             <div class="item features-image col-12 col-md-6 col-lg-3">
               <div class="item-wrapper">
                 <div class="item-img mb-3">
-                  <img src="assets/images/photo-1596421250711-9ec0ef9cbba3.jpeg">
+                  <img src="assets/images/sasi.png">
+                </div>
+                <div class="item-content align-left">
+                  <h6 class="item-subtitle mbr-fonts-style display-5">
+                    <strong>Ethan</strong>
+                  </h6>
+                  <p class="mbr-text mbr-fonts-style display-7">Director of International Affairs</p>
+                </div>
+              </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+              <div class="item-wrapper">
+                <div class="item-img mb-3">
+                  <img src="assets/images/sasi.png">
                 </div>
                 <div class="item-content align-left">
                   <h6 class="item-subtitle mbr-fonts-style display-5">
@@ -1335,11 +1402,12 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
+<!-- 
   <div class="scrolling-wrapper">
     <div class="item features-image col-12 col-md-6 col-lg-3">
       <div class="item-wrapper">
@@ -1445,7 +1513,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <style>
     .scrolling-wrapper {
       display: flex;
@@ -2134,6 +2202,7 @@
     .cid-u14wQlLBxB .img-wrapper {
       display: flex;
       justify-content: center;
+
     }
   </style>
   <!-- <section class="people04 cid-u14wQlLBxB" id="testimonials-4-u14wQlLBxB">
@@ -2993,9 +3062,12 @@
       padding: 0;
       margin: 0;
     }
+    .contactus{
+      font-size: 15px;
+    }
   </style>
   <section class="contacts4 map1 cid-u14wQlLvkh" id="contacts-3-u14wQlLvkh">
-    <div class="main_wrapper">
+    <div class="main_wrapper" id="contact">
       <div class="b_wrapper">
         <div class="container-fluid">
           <div class="row justify-content-start">
@@ -3003,15 +3075,13 @@
               <h5 class="cardTitle mbr-fonts-style mb-2 display-5">
                 <strong>Contact Us</strong>
               </h5>
-              <ul class="list mbr-fonts-style display-7">
-                <li class="mbr-text item-wrap">Phone: <a href="tel:+1 123-456-7890" class="text-black">+1
-                    123-456-7890</a></li>
-                <li class="mbr-text item-wrap">WhatsApp: <a href="tel:+1 123-456-7890" class="text-black">+1
-                    123-456-7890</a></li>
-                <li class="mbr-text item-wrap">Email: <a href="mailto:info@IntAff.com"
-                    class="text-black">info@IntAff.com</a></li>
-                <li class="mbr-text item-wrap">Address: India</li>
-                <li class="mbr-text item-wrap">Working Hours: Mon - Fri: 9am - 5pm</li>
+              <ul class="list mbr-fonts-style display-7 contactus">
+                <li class="mbr-text item-wrap"><strong>Phone:</strong> <a href="tel:+1 123-456-7890" class="text-black">0091-482-2202155, 2100</a></li>
+                <li class="mbr-text item-wrap"><strong>WhatsApp:</strong> <a href="tel:+1 123-456-7890" class="text-black">+91 9443543746</a></li>
+                <li class="mbr-text item-wrap"><strong>Email:</strong> <a href="mailto:international-affairs@iiitkottayam.ac.in"
+                    class="text-black">international-affairs@iiitkottayam.ac.in</a></li>
+                <li class="mbr-text item-wrap"><strong>Address:</strong> IIIT Kottayam, Valavoor - Chakkampuzha Rd, Valavoor, Nechipuzhoor, Kerala 686635</li>
+                <li class="mbr-text item-wrap"><strong>Working Hours:</strong> Mon - Fri: 9am - 5pm</li>
               </ul>
             </div>
           </div>
